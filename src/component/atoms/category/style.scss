@@ -1,0 +1,121 @@
+@import "./../../../_style/config";
+
+.wrapper-card {
+  border: 2px solid $third-color;
+  width: 220px;
+  border-radius: 15px;
+  color: $font-primary;
+  height: 20rem;
+  margin-right: 15px;
+  margin-left: 15px;
+  transition: 0.3s ease-out;
+  z-index: 10;
+  position: relative;
+  padding-bottom: 2rem;
+
+  &::before {
+    content: "";
+    width: 230px;
+    height: 16.5rem;
+    background-color: transparent;
+    position: absolute;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-image: $gradient-card;
+    height: 21rem;
+    width: 230px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: $shadow-card;
+  }
+
+  &:hover .get-started {
+    background-color: $font-primary;
+    border: none;
+    color: $white;
+    cursor: pointer;
+    margin-top: 4.2rem;
+  }
+  .title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .price {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+
+    .value {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      color: $font-primary;
+    }
+
+    .desc {
+      text-align: center;
+    }
+
+    .desc-mobile {
+      display: none;
+    }
+  }
+
+  .in-card-feature {
+    display: none;
+  }
+
+  .get-started {
+    border: 1px solid $third-color;
+    width: 80%;
+    height: 45px;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $third-color;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out 0.1s;
+  }
+}
+
+.wrapper-card.active {
+  background-image: $gradient-card;
+  height: 21rem;
+  width: 230px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: $shadow-card;
+
+  &:hover .get-started {
+    background-color: transparent;
+  }
+
+  .get-started {
+    border: 2px solid $font-primary;
+    width: 80%;
+    height: 45px;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $font-primary;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out 0.1s;
+    font-weight: 700;
+
+    &:hover {
+      background-color: $font-primary;
+      color: white;
+      border: none;
+      font-weight: normal;
+    }
+  }
+}

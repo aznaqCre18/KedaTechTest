@@ -1,0 +1,43 @@
+@media (max-width: 400px) {
+  #pricing-container {
+    .category {
+      .scrolling {
+        .card-category {
+          width: 210vw !important;
+        }
+      }
+    }
+
+    .banner {
+      .banner-title {
+        h1 {
+          font-size: 0.9rem !important;
+        }
+      }
+    }
+  }
+
+  #about-container {
+    .top-section {
+      padding-bottom: 0 !important;
+      .list-about {
+        flex-wrap: wrap !important;
+
+        .about {
+          margin-right: 2rem !important;
+          margin-bottom: 1rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  #pricing-container {
+    .banner {
+      .btn-quest {
+        font-size: 0.6rem !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "./../../../_style/config";
+
+.wrapper-feature:nth-child(even) {
+  background-color: $white;
+}
+
+.wrapper-feature {
+  background-color: $bg-feature;
+  width: 95%;
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+
+  p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $font-primary;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    width: 33%;
+  }
+
+  .check {
+    display: flex;
+
+    .basic {
+      width: 220px;
+      margin-right: 25px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 18%;
+      }
+    }
+
+    .business {
+      width: 220px;
+      margin-right: 27px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 18%;
+      }
+    }
+
+    .entrepreneur {
+      width: 220px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 18%;
+      }
+    }
+  }
+}

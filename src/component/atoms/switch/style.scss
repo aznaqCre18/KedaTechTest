@@ -1,0 +1,43 @@
+@import "./../../../_style/config";
+
+.wrapper-switch {
+  display: flex;
+
+  .switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    color: $font-primary;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: $bg-switch;
+    transition: 0.2s cubic-bezier(0.68, -0.55, 0.51, 1.4);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .month {
+    margin-right: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .year {
+    margin-left: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  div.switch.active {
+    background-color: $third-color;
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,137 @@
+@import "./../config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#about-container {
+  height: 100%;
+  padding: 40px;
+  background-color: $bg-footer;
+
+  .top-section {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #7d828d;
+    padding-bottom: 20px;
+
+    .list-about {
+      display: flex;
+      width: 800px;
+      justify-content: space-around;
+      .about {
+        h3 {
+          text-transform: uppercase;
+          color: $font-title-foot;
+          font-size: 1rem;
+          letter-spacing: 2px;
+        }
+
+        ul {
+          padding: 15px 0;
+          li {
+            color: $white;
+            font-size: 0.9rem;
+            padding: 5px 0;
+            width: 100%;
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              transform: scaleX(0);
+              height: 2px;
+              bottom: 0;
+              left: 0;
+              background-color: white;
+              transform-origin: bottom left;
+              transition: transform 0.25s ease-out;
+            }
+
+            &:hover::before {
+              transform: scaleX(1);
+              transform-origin: bottom right;
+            }
+          }
+        }
+      }
+    }
+
+    .subscribe {
+      h3 {
+        text-transform: uppercase;
+        color: $font-title-foot;
+        font-size: 1rem;
+        letter-spacing: 2px;
+      }
+      p {
+        font-size: 0.8rem;
+        color: $white;
+        width: 70%;
+        padding: 15px 0;
+      }
+
+      .subs-input {
+        display: flex;
+        .input-subs {
+          width: 50%;
+          height: 35px;
+          border: none;
+          border-radius: 5px;
+          padding-left: 10px;
+        }
+        .btn-subs {
+          background-color: $btn-subs;
+          color: $white;
+          padding: 0 10px;
+          margin-left: 8px;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 0.8rem;
+
+          &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+
+    .copyrights {
+      font-size: 0.9rem;
+      color: $font-title-foot;
+      margin-left: 10px;
+
+      i {
+        font-style: normal;
+        font-size: 1.2rem;
+      }
+    }
+
+    .sosmed {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin: 0 10px;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

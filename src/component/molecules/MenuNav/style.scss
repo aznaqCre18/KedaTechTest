@@ -1,0 +1,96 @@
+@import "./../../../_style/config";
+
+.menu-container {
+  position: absolute;
+  width: 100%;
+  background-image: linear-gradient(313.42deg, #615ad5 14.13%, #04b8fd 89.41%);
+  z-index: 1;
+  color: white;
+  height: 90vh;
+  opacity: 0;
+  display: none;
+
+  .inner-menu {
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-between;
+    padding: 32px;
+
+    .menu-big {
+      font-size: 3rem;
+      ul {
+        li {
+          padding-bottom: 1rem;
+          padding-top: 0.5rem;
+          display: block;
+          position: relative;
+          cursor: pointer;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+          }
+
+          &:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
+        }
+      }
+    }
+
+    .sub-menu {
+      margin-right: 4rem;
+      .about.solution {
+        h3 {
+          margin-top: 0;
+        }
+      }
+      .about {
+        h3 {
+          text-transform: uppercase;
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          margin-top: 1.5rem;
+        }
+
+        ul {
+          li {
+            padding-bottom: 0.3rem;
+            padding-top: 0.3rem;
+            display: block;
+            position: relative;
+            cursor: pointer;
+            width: 60%;
+
+            &::before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              transform: scaleX(0);
+              height: 2px;
+              bottom: 0;
+              left: 0;
+              background-color: white;
+              transform-origin: bottom right;
+              transition: transform 0.25s ease-out;
+            }
+
+            &:hover::before {
+              transform: scaleX(1);
+              transform-origin: bottom left;
+            }
+          }
+        }
+      }
+    }
+  }
+}

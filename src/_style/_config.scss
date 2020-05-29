@@ -1,0 +1,29 @@
+@font-face {
+  font-family: google;
+  src: url(./../assets/fonts/GoogleSans-Regular.ttf);
+}
+
+$primary-color: #04b8fd;
+$secondary-color: #58cfeb;
+$third-color: #1c6cfa;
+$forth-color: #c696e0;
+$fifth-color: #6c63ff;
+
+$bg-footer: #182135;
+$bg-hero: #dfebff;
+$gradient-card: linear-gradient(326.86deg, #c696e0 8.16%, #1c6cfa 93.86%);
+$gradient-login: linear-gradient(330.5deg, #6c63ff 12.36%, #04b8fd 90.94%);
+$shadow-card: 0px 0px 15px rgba(88, 207, 235, 0.25),
+  0px 0px 15px rgba(88, 207, 235, 0.25);
+$list-pricing: rgba(198, 150, 224, 0.28);
+$bg-switch: #f1f6ff;
+$bg-feature: rgba(198, 150, 224, 0.28);
+
+$font-primary: #413939;
+$font-secondary: #414141;
+$font-third: #5e5454;
+$font-title-foot: rgba(255, 255, 255, 0.5);
+$white: #fff;
+$btn-subs: #2773fa;
+
+$font-stack: google, serif;
